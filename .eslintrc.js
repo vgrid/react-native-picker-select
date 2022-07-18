@@ -1,5 +1,5 @@
 module.exports = {
-    extends: 'ls-react',
+    extends: 'react-app',
     env: {
         jest: true,
     },
