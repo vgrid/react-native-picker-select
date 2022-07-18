@@ -1,5 +1,6 @@
 import {
     ModalProps,
+    StyleProp,
     TextInputProps,
     TextStyle,
     TouchableOpacityProps,
@@ -23,26 +24,26 @@ export interface Item {
 }
 
 export interface PickerStyle {
-    chevron?: ViewStyle;
-    chevronActive?: ViewStyle;
-    chevronContainer?: ViewStyle;
-    chevronDown?: ViewStyle;
-    chevronUp?: ViewStyle;
-    done?: TextStyle;
-    doneDepressed?: TextStyle;
-    headlessAndroidContainer?: ViewStyle;
-    headlessAndroidPicker?: ViewStyle;
-    iconContainer?: ViewStyle;
-    inputAndroid?: TextStyle;
-    inputAndroidContainer?: ViewStyle;
-    inputIOS?: TextStyle;
-    inputIOSContainer?: ViewStyle;
-    inputWeb?: TextStyle;
-    modalViewBottom?: ViewStyle;
-    modalViewMiddle?: ViewStyle;
-    modalViewTop?: ViewStyle;
-    placeholder?: TextStyle;
-    viewContainer?: ViewStyle;
+    chevron?: StyleProp<ViewStyle>;
+    chevronActive?: StyleProp<ViewStyle>;
+    chevronContainer?: StyleProp<ViewStyle>;
+    chevronDown?: StyleProp<ViewStyle>;
+    chevronUp?: StyleProp<ViewStyle>;
+    done?: StyleProp<TextStyle>;
+    doneDepressed?: StyleProp<TextStyle>;
+    headlessAndroidContainer?: StyleProp<ViewStyle>;
+    headlessAndroidPicker?: StyleProp<ViewStyle>;
+    iconContainer?: StyleProp<ViewStyle>;
+    inputAndroid?: StyleProp<TextStyle>;
+    inputAndroidContainer?: StyleProp<ViewStyle>;
+    inputIOS?: StyleProp<TextStyle>;
+    inputIOSContainer?: StyleProp<ViewStyle>;
+    inputWeb?: StyleProp<TextStyle>;
+    modalViewBottom?: StyleProp<ViewStyle>;
+    modalViewMiddle?: StyleProp<ViewStyle>;
+    modalViewTop?: StyleProp<ViewStyle>;
+    placeholder?: StyleProp<TextStyle>;
+    viewContainer?: StyleProp<ViewStyle>;
 }
 
 type CustomModalProps = Omit<ModalProps, 'visible' | 'transparent' | 'animationType'>;
