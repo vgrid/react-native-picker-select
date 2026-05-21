@@ -1,0 +1,14 @@
+src/index.js
+  h_44fba35715e3a8 391,398
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "1ce11ff42b58c3d71ff638b7902d7bef214dd5ae",
+  "prompts": {},
+  "humans": {
+    "h_44fba35715e3a8": {
+      "author": "Chris Wiggins <chris@chriswiggins.co.nz>"
+    }
+  }
+}
