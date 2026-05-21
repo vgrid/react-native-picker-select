@@ -388,14 +388,14 @@ export default class RNPickerSelect extends PureComponent {
 
         if (children) {
             return (
-                <View pointerEvents="box-only" style={containerStyle}>
+                <View pointerEvents="none" style={containerStyle}>
                     {children}
                 </View>
             );
         }
 
         return (
-            <View pointerEvents="box-only" style={containerStyle}>
+            <View pointerEvents="none" style={containerStyle}>
                 <TextInput
                     testID="text_input"
                     style={[
@@ -429,7 +429,7 @@ export default class RNPickerSelect extends PureComponent {
                     {this.renderTextInputOrChildren()}
                 </TouchableOpacity>
                 {!!showPicker && (
-                    <View style={{flex: 1}}>
+                    <View style={{ flex: 1 }}>
                         <Modal
                             testID="ios_modal"
                             visible={showPicker}
@@ -466,7 +466,6 @@ export default class RNPickerSelect extends PureComponent {
                         </Modal>
                     </View>
                 )}
-
             </View>
         );
     }
